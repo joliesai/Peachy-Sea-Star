@@ -2,6 +2,8 @@
 //CPSC 121 Lab 1
 //09/05/2018
 
+//This isn't GitHub Classroom. Upload it to GitHub Classroom.
+
 #include <iostream>
 using namespace std;
 
@@ -12,6 +14,16 @@ int main()
   cin >> cents; //user inputs info here
   //must display number of quarters, dimes, nickels, and pennies needed to reach the value
   //use %
+  quarters = cents / 25;
+  //dimes = cents / 10;
+  dimes = cents % quarters;
+  //nickels = cents / 5;
+  nickels = cents % dimes;
+  //pennies = cents / 1;
+  pennies = cents % nickels;
+  
+  cents = quarters + dimes + nickels + pennies;
+  
   cout << "Coins required to obtain " << cents << "cents" << endl;
   cout << "quarters: " << quarters << "dimes: " << dimes << "nickels: " << nickels << "and pennies: " << pennies;
 }
