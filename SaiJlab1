@@ -21,14 +21,19 @@ int main()
   int cents, quarters, dimes, nickels, pennies; //possibly dealing with coins and not dollar bills from the user
   cout << "Please enter a number of cents you desire.\n"; //asking the user how many cents he/she wants
   cin >> cents; //user inputs info here
+  
   //must display number of quarters, dimes, nickels, and pennies needed to reach the value
   //use %
+  
   //quarters = cents / 25;
   cents %= 25; //instead of writing cents = cents % 25
+  
   //dimes = cents / 10;
-  dimes = cents % quarters;
+  //dimes = cents % quarters;
+  
   //nickels = cents / 5;
   nickels = cents % dimes;
+  
   //pennies = cents / 1;
   pennies = cents % nickels;
   
