@@ -1,0 +1,17 @@
+//Jolie M. Sai
+//CPSC 121 Lab 1
+//09/05/2018
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int cents, quarters, dimes, nickels, pennies; //possibly dealing with coins and not dollar bills from the user
+  cout << "Please enter a number of cents.\n"; //asking the user how many cents he/she wants
+  cin >> cents; //user inputs info here
+  //must display number of quarters, dimes, nickels, and pennies needed to reach the value
+  //use %
+  cout << "Coins required to obtain " << cents << "cents" << endl;
+  cout << "quarters: " << quarters << "dimes: " << dimes << "nickels: " << nickels << "and pennies: " << pennies;
+}
