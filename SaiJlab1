@@ -12,6 +12,9 @@
 B; -Directional WHATEVER THAT MEANS*/
 
 //in Tuffix, don't use system pause
+//use Atom to compile
+//look at g++ PPT for commands to put into terminal emulator
+//will see /a.out
 
 #include <iostream>
 using namespace std;
