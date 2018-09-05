@@ -24,7 +24,7 @@ int main()
   //must display number of quarters, dimes, nickels, and pennies needed to reach the value
   //use %
   //quarters = cents / 25;
-  cents = cents % 25;
+  cents %= 25; //instead of writing cents = cents % 25
   //dimes = cents / 10;
   dimes = cents % quarters;
   //nickels = cents / 5;
