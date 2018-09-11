@@ -24,16 +24,18 @@ int main()
 
 	cout << "Please enter a number of cents you desire.\n"; //asking the user how many cents he/she wants
 	cin >> cents; //user inputs info here
-	cout << "Coins required to obtain " << cents << " cents" << endl;
-	//must display number of quarters, dimes, nickels, and pennies needed to reach the value
-	//use %
+	cout << "Coins required to obtain " << cents << " cents" << endl; //restate user input
+	//just to sound professional
+	
+	//use % b/c goal is to have total value in coin value
 
-	quarters = cents / 25;
-	dimes = (cents % 25) / 10;
-	nickels = (cents % 10) / 5;
-	pennies = cents % 5;
+	quarters = cents / 25; //biggest value in coin
+	dimes = (cents % 25) / 10; //remainder from quarters divided by 10
+	nickels = (cents % 10) / 5; //remainder from dimes divided by 5
+	pennies = cents % 5; //remainder from nickels
 
 	cout << "quarters: " << quarters << " dimes: " << dimes << " nickels: " << nickels << " and pennies: " << pennies;
+	//must display number of quarters, dimes, nickels, and pennies needed to reach the value
   
 	return 0;
 }
