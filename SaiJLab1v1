@@ -1,1 +1,27 @@
+//Jolie M. Sai
+//CPSC 121 Lab 1
+//09/10/2018
 
+#include <iostream>
+using namespace std;
+int main()
+{
+	int cents, quarters, dimes, nickels, pennies; //possibly dealing with coins and not dollar bills from the user
+
+	cout << "Please enter a number of cents you desire.\n"; //asking the user how many cents he/she wants
+	cin >> cents; //user inputs info here
+	cout << "Coins required to obtain " << cents << " cents" << endl; //restate user input
+	//just to sound professional
+	
+	//use % b/c goal is to have total value in coin value
+
+	quarters = cents / 25; //biggest value in coin
+	dimes = (cents % 25) / 10; //remainder from quarters divided by 10
+	nickels = (cents % 10) / 5; //remainder from dimes divided by 5
+	pennies = cents % 5; //remainder from nickels
+
+	cout << "quarters: " << quarters << " dimes: " << dimes << " nickels: " << nickels << " and pennies: " << pennies;
+	//must display number of quarters, dimes, nickels, and pennies needed to reach the value
+  
+	return 0;
+}
